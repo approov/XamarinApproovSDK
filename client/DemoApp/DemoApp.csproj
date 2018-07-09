@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApproovSDK\ApproovSDK.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="SecretsSample.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SecretsSample.cs" />
+  </ItemGroup>
+</Project>

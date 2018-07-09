@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:DemoApp" x:Class="DemoApp.MainPage">
+    <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="SpaceEvenly">
+
+        <Label
+            Margin="10,20,10,20" HorizontalTextAlignment="Center" 
+            FontAttributes="Bold" FontSize="Large"
+            Text="Approov Demo"
+        />
+
+        <FlexLayout FlexLayout.Grow="1" Direction="Column" AlignItems="Center" JustifyContent="SpaceEvenly">
+            <Image x:Name="statusImage" 
+                    Aspect="AspectFit" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                    Source="approov.png"
+            />
+        </FlexLayout>
+
+        <Label x:Name="statusLabel" 
+                Margin="10,20,10,20" 
+                Text=""
+        />
+
+        <StackLayout Margin="10,10,10,10" Orientation="Horizontal" HorizontalOptions="Fill">
+            <Button Text="Hello" Margin="10,10,20,10" Clicked="OnHello" />
+            <Button Text="Shape" Margin="20,10,10,10" Clicked="OnShape" />
+        </StackLayout>
+
+    </FlexLayout>
+</ContentPage>

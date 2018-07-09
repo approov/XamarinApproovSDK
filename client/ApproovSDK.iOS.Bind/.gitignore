@@ -1,0 +1,2 @@
+﻿# Ignore iOS library frameworks
+*.framework/
