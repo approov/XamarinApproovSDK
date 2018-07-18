@@ -103,6 +103,11 @@ namespace ApproovSDK.Droid
             return tcs.Task;
         }
 
+        public override void SetTokenPayloadValue(string value)
+        {
+            ApproovAttestation.Shared().SetTokenPayloadValue(value);
+        }
+
         public override byte[] GetCert(string url)
         {
             return ApproovAttestation.Shared().GetCert(url);

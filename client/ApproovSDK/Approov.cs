@@ -57,6 +57,16 @@ namespace ApproovSDK
         public abstract Task<string> FetchTokenAsync(string url = null);
 
         /**
+         * Sets a token payload value.
+         * 
+         * A base64 encoded SHA256 hash of the payload data will be added as
+         * a 'pay' claim in subsequent attestation tokens. 
+         *
+         * @param   value The payload data as a non-null string value.
+         */
+        public abstract void SetTokenPayloadValue(string value);
+
+        /**
          * Retrieves the X.509 TLS leaf certificate in DER binary format
          * for the given URL.
          *

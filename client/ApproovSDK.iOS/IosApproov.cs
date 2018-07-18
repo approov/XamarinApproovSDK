@@ -68,6 +68,11 @@ namespace ApproovSDK.iOS
             return tcs.Task;
         }
 
+        public override void SetTokenPayloadValue(string value)
+        {
+            ApproovAttestee.SharedAttestee().SetTokenPayloadValue(value);
+        }
+
         public override byte[] GetCert(string url)
         {
             return ApproovAttestee.SharedAttestee().GetCert(url).ToArray();
