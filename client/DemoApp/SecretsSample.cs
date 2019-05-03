@@ -12,7 +12,7 @@
  * 2) In the Xamarin project, this file's build action is set to 'None'. 
  *    Make sure the build action for the actual Secrets.cs file is set
  *    to 'Compile'.
-
+ */
 namespace DemoApp
 {
     public static class Secrets
