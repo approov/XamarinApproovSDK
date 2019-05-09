@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="SecretsSample.cs" />
+    <Compile Remove="SecretsSample %28copy%29.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SecretsSample.cs" />

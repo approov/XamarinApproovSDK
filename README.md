@@ -101,11 +101,12 @@ Make sure that the bundle file `approov.aar`  is copied into the project, and th
 
 #### For iOS
 
-For iOS, the Approov library is provided as a zip archive. Unzip the archive to create the `Approov.Framework` directory. Add this directory of files to the `ApproovSDK.iOS.Bind` project. In the Visual Studio IDE, right-click on the `ApproovSDK..iOS.Bind` project and add your `Approov.framework` directory:
+For iOS, the Approov library is provided as a zip archive. Unzip the archive to create the `Approov.Framework` directory. Add this directory of files to the `ApproovSDK.iOS.Bind` project. In the Visual Studio IDE, right-click on the `ApproovSDK..iOS.Bind` project and select `Add Existing Folder...`. Select the unzipped `Approov.Framework` directory to copy, and include all files into the project:
 
 ![App Images](docs/images/iOSAddFramework.png)
 
-Make sure that the directory of files is copied into the project.
+
+Although the `Approov.Framework` has been copied into the `ApproovSDK.iOS.Bind` project, the library resources must still be bound to the Xamarin project. In the IDE, right click on the `Approov.Framework` directory and select `Add Existing Folder...`.  This time select the `files/_CodeSignature` directory and copy all files.
 
 [MENU](#menu)
 
